@@ -1,0 +1,42 @@
+{
+  "documentationUrl": "https://docsurl.com",
+  "connectionSpecification": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Netsuite Openair Spec",
+    "type": "object",
+    "required": ["oa_url","oa_company","oa_un","oa_password","oa_client"],
+    "additionalProperties": false,
+    "properties": {
+      "oa_url": {
+        "title": "OpenAir URL",
+        "type": "string",
+        "description": "Usually in the format of: https://{company id}.app.openair.com/api.pl."
+      },
+      "oa_company": {
+        "title": "OpenAir Company",
+        "type": "string",
+        "description": "OpenAir company code (ID)."
+      },
+      "oa_client": {
+        "title": "OpenAir Client ID",
+        "type": "string",
+        "description": "Created during application registration process."
+      },
+      "oa_key": {
+        "title": "OpenAir Client Key",
+        "type": "string",
+        "description": "Created during application registration process."
+      },
+      "oa_un": {
+        "title": "User ID",
+        "type": "string",
+        "description": "User name for service account."
+      },
+      "oa_password": {
+        "title": "OpenAir Password",
+        "type": "string",
+        "description": "Password for service account."
+      }
+    }
+  }
+}
